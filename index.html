@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="vendor/slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Project-work-Kseniya</title>
@@ -22,11 +24,11 @@
         <div class="menu-wrapper">
             <a href="#" class=" menu-hamburger fa fa-bars"></a>
             <nav class="menu ">
-                <a data-scroll href="#HOME">HOME</a>
-                <a data-scroll href="#ABOUT">ABOUT</a>
-                <a data-scroll href="#SERVICES">SERVICES</a>
-                <a data-scroll href="#PRICES">PRICES</a>
-                <a data-scroll href="#CONTACTS">CONTACTS</a>
+                <a data-scroll href="#home">HOME</a>
+                <a data-scroll href="#about">ABOUT</a>
+                <a data-scroll href="#services">SERVICES</a>
+                <a data-scroll href="#prices">PRICES</a>
+                <a data-scroll href="#contacts">CONTACTS</a>
             </nav>
         </div>
         <div class="social">
@@ -37,35 +39,57 @@
     </div>
 </header>
 <div class="promo">
-    <div class="block-slider">
-        <img src="uploads/Promo-slider.jpg" width="1800" height="490" alt="Promo pictures abstract">
-        <div class="container">
-            <div class="text-block">
-                <h2 class="slide-title">Anhiora business solutions</h2>
-                <p>Ethernet scan, in indeterminate controller high, recognition frequency silicon logistically.
-                    Read-only or boolean potentiometer pc infrared development debugged processor. </p>
+    <div class="slSlider">
+        <div>
+            <img src="uploads/Promo-slider.jpg" width="1800" height="490" alt="Promo pictures abstract">
+            <div class="container">
+                <div class="text-block">
+                    <div class="bg-change-red indent">
+                        <h2 class="slide-title"><span>Anhiora</span> business solutions</h2>
+                    </div>
+                    <div class="bg-change-blue indent">
+                        <p>Ethernet scan, in indeterminate controller high, recognition frequency silicon
+                            logistically.Read-only or boolean potentiometer pc infrared development debugged
+                            processor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="uploads/Promo-slider-2.jpg" width="1800" height="490" alt="Promo pictures abstract">
+            <div class="container">
+                <div class="text-block">
+                    <div class="bg-change-red indent">
+                        <h2 class="slide-title"><span>Anhiora</span> best solutions</h2>
+                    </div>
+                    <div class="bg-change-blue indent">
+                        <p>Ethernet scan, in indeterminate controller high, recognition frequency silicon
+                            logistically.Read-only or boolean potentiometer pc infrared development debugged
+                            processor.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
 <div class="container">
     <div class="block-intro">
-        <div class="wrap-info-box">
+        <div class="wrap-intro">
             <span><i class="fa fa-road" aria-hidden="true"></i></span>
             <h3>New way of vision</h3>
             <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
         </div>
-        <div class="wrap-info-box">
+        <div class="wrap-intro">
             <span><i class="fa fa-leaf" aria-hidden="true"></i></span>
             <h3>Fresh ideas</h3>
             <p>Suspendisse auctor sagittis quam quis rhoncus. </p>
         </div>
-        <div class="wrap-info-box">
+        <div class="wrap-intro">
             <span><i class="fa fa-home" aria-hidden="true"></i></span>
             <h3>Strong foundations</h3>
             <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
         </div>
-        <div class="wrap-info-box">
+        <div class="wrap-intro">
             <span><i class="fa fa-users" aria-hidden="true"></i></span>
             <h3>Great support</h3>
             <p>Suspendisse auctor sagittis quam quis rhoncus. </p>
@@ -74,29 +98,34 @@
 </div>
 <div class="profile-block">
     <div class="container">
-        <h2 class="title">About Us</h2>
-        <article>
-            <h4>Who We Are?</h4>
-            <p>Suspendisse dictum quam tortor, et dapibus lacus. Quisque euismod lacus in mi consequat sed pulvinar elit
-                ultricies. Nam eu ligula ut massa lobortis scelerisque. Curabitur at rhoncus quam. In in tortor quis sem
-                tempor ultricies in eu risus. Fusce posuere justo et metus semper molestie. </p>
-        </article>
-        <article>
-            <h4>Why us?</h4>
-            <ul>
-                <li>Suspendisse dictum quam tortor</li>
-                <li>Set dapibus lacus.</li>
-                <li>Quisque euismod lacus in mi consequat sed</li>
-                <li>Nam eu ligula ut massa lobortis scelerisque.</li>
-                <li>Curabitur at rhoncus quam.</li>
-            </ul>
-        </article>
-        <article>
-            <h4>Testemonials</h4>
-            <blockquote><p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in eu risus. Fusce posuere
-                justo et metus semper molestie.</p></blockquote>
-            <p>Jhon Doe</p>
-        </article>
+        <h2 class="title bg-change-red ">About Us</h2>
+        <div class="profile-wrap">
+            <article>
+                <h4>Who We Are?</h4>
+                <p>Suspendisse dictum quam tortor, et dapibus lacus. Quisque euismod lacus in mi consequat sed pulvinar
+                    elit
+                    ultricies. Nam eu ligula ut massa lobortis scelerisque. Curabitur at rhoncus quam. In in tortor quis
+                    sem
+                    tempor ultricies in eu risus. Fusce posuere justo et metus semper molestie. </p>
+            </article>
+            <article>
+                <h4>Why us?</h4>
+                <ul>
+                    <li>Suspendisse dictum quam tortor</li>
+                    <li>Set dapibus lacus.</li>
+                    <li>Quisque euismod lacus in mi consequat sed</li>
+                    <li>Nam eu ligula ut massa lobortis scelerisque.</li>
+                    <li>Curabitur at rhoncus quam.</li>
+                </ul>
+            </article>
+            <article>
+                <h4>Testemonials</h4>
+                <blockquote><p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in eu risus. Fusce
+                    posuere
+                    justo et metus semper molestie.</p></blockquote>
+                <p>Jhon Doe</p>
+            </article>
+        </div>
     </div>
 </div>
 <div class="services">
@@ -201,6 +230,8 @@
     </div>
 </footer>
 <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+<script src="vendor/slick/slick.min.js"></script>
 <script src="vendor/smooth-scroll"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
