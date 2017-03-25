@@ -12,12 +12,13 @@ body {
 .wrap-flex-block {
     display: flex;
     flex-direction: row;
+
     /*flex-wrap: wrap;*/
 }
 a{
     text-decoration: none;
 }
-h2,h5 {
+h2,h3,h4,h5 {
     margin: 0;
 }
 
@@ -66,6 +67,50 @@ header .container{
     width: 124px;
     height: 26px;
 }
+/********************Menu**************************/
+.menu-wrapper {
+    /*width: 20%;*/
+    text-align: center;
+    position: relative;
+}
+
+.menu-hamburger {
+    font-size: 2em;
+    display: inline-block;
+    /*padding: calc(10% - .5em);*/
+    text-decoration: none;
+    color: #ea5a4b;
+}
+.menu {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+    min-width: 12em;
+    text-align: center;
+    background: rgb(211, 67, 70);
+}
+
+.menu a {
+    font-size: 0.75em;
+    font-weight: bold;
+    line-height: 1.33333em;
+    display: block;
+    /*margin: 0 2% 5% 2%;*/
+    padding: 3% 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #252525;
+}
+
+.menu a:hover {
+    color: #fff;
+}
+
+.menu-wrapper:hover .menu {
+    display: block;
+    z-index: 2;
+}
 /*********************menu*********************************/
 
 .menu {
@@ -78,7 +123,7 @@ header .container{
     font-size: 14px;
     color: rgba(255, 255, 255, 0.8);
     line-height: 1.2;
-    text-align: right;
+    text-align: center;
 
 }
 .menu a:hover {
@@ -105,13 +150,14 @@ header .container{
     position: absolute;
 }
 
-.promo .text-block h2 {
+.promo .text-block h2 a{
     font-size: 25px;
     color: rgb(255, 255, 255);
     line-height: 1.2;
     font-weight:normal;
     text-align: left;
     margin: 0;
+
 }
 .text-block h2 span {
     font-weight:bold;
@@ -126,7 +172,11 @@ header .container{
 /***********************block-intro*****************************/
 
 .wrap-intro {
-
+    display: flex;
+}
+.block-intro {
+    justify-content: space-between;
+    margin-bottom:78px;
 }
 .wrap-intro h3 {
     font-size: 20px;
@@ -136,18 +186,34 @@ header .container{
     font-weight:normal;
 }
 
-.wrap-intro p {
+.pull_right p {
     font-size: 14px;
     color: rgb(33, 33, 33);
     line-height: 1.5;
     text-align: left;
 }
-/*****************************Profile Block*********************************/
+.block-intro .fa {
+    font-size: 32px;
+    color: rgb(44, 62, 80);
+    line-height: 1.2;
+    text-align: left;
+}
+.pull_right {
+    max-width: 200px;
+    margin-left: 24px;
+}
+    /*****************************Profile Block*********************************/
 .profile-block {
     background: #efefef;
 }
 .title {
     color: #ffffff;
+}
+.indent-title {
+    padding-top: 12px;
+    padding-left: 21px ;
+    padding-bottom: 12px;
+    box-sizing: border-box;
 }
 .profile-wrap {
 
@@ -165,9 +231,34 @@ article h4 {
 .text-wrap span .fa {
     font-size: 44px;
     color: #bd2c30;
+    margin: 0;
 
 }
-
+blockquote {
+    background: #fff;
+    padding: 34px 32px;
+    box-sizing: border-box;
+    margin: 0;
+}
+blockquote p{
+    margin: 0;
+}
+blockquote::after{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width:0 46px 57px 0;
+    margin: 0 -33px 0;
+    border-color: transparent #ffffff transparent transparent;
+}
+.author-cite{
+    font-size: 14px;
+    color: rgb(189, 45, 48);
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
 .analysis {
     background: url("../images/analisys.svg") center center;
     background-repeat: no-repeat;
@@ -254,10 +345,26 @@ footer div{
 
 /*********************************Media SCREEN***********************/
 @media screen and (min-width: 640px){
-    .menu {
-        display: inline-block;
+    .menu-hamburger {
+        display: none;
     }
-    .menu-hamburger{
+    .menu-wrapper {
+        display: block;
+    }
+
+    .menu-wrapper:hover .menu {
+        display: block;
+    }
+
+    .menu {
+        display: block;
+        position: static;
+        min-width: 16em;
+        text-align: right;
+        background: none;
+    }
+
+    .menu-hamburger {
         display: none;
     }
     .menu a {
@@ -281,5 +388,13 @@ footer div{
     }
     article{
         width: 30%;
+        margin-bottom: 55px;
+        margin-right: 5%;
+    }
+    article:last-child{
+        margin-right: 0;
+    }
+    .profile-block h2 {
+        margin-bottom: 55px;
     }
 }
