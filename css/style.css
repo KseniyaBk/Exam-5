@@ -198,10 +198,19 @@ article h4 {
 .text-wrap{
     width: 16%;
 }
+.offer-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.offer-block a{
+    background: #314559;
+    color: #FFFFFF;
+    text-align: center;
+}
 /*******************************FOOTER*****************************/
 footer {
     background: #314559;
-
 }
 footer .container {
     justify-content: space-between;
@@ -228,6 +237,21 @@ footer div{
     background-repeat: no-repeat;
     display: inline-block;
 }
+/*.slick-dots li button {*/{
+    display: block;
+    width: 47px;
+    height: 48px;
+    cursor: pointer;
+    border: 0;
+    outline: none;
+    position: absolute;
+    background: url("../images/button-arrow-sprite.svg") 0 0;
+    background-repeat: no-repeat;
+}
+.slick-dots {
+    bottom: 50%;
+}
+
 /*********************************Media SCREEN***********************/
 @media screen and (min-width: 640px){
     .menu {

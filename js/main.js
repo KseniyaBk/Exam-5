@@ -6,6 +6,6 @@ $('.slSlider').slick({
     slidesToScroll: 1,
     arrows: false,
     fade: true,
-    dots: true
+    dots: false
 });
 smoothScroll.init();
