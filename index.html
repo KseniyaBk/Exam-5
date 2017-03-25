@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Project-work-Kseniya</title>
@@ -11,24 +12,33 @@
 <body>
 <header>
     <div class="container">
-        <div class="logo"></div>
-        <nav>
-            <a href="#HOME">HOME</a>
-            <a href="#ABOUT">ABOUT</a>
-            <a href="#SERVICES">SERVICES</a>
-            <a href="#PRICES">PRICES</a>
-            <a href="#CONTACTS">CONTACTS</a>
+        <div class="logo">
+            <a href="#">
+                Anhiora</a>
+        </div>
+        <nav class="menu">
+
         </nav>
+        <div class="menu-wrapper">
+            <a href="#" class=" menu-hamburger fa fa-bars"></a>
+            <nav class="menu ">
+                <a data-scroll href="#HOME">HOME</a>
+                <a data-scroll href="#ABOUT">ABOUT</a>
+                <a data-scroll href="#SERVICES">SERVICES</a>
+                <a data-scroll href="#PRICES">PRICES</a>
+                <a data-scroll href="#CONTACTS">CONTACTS</a>
+            </nav>
+        </div>
         <div class="social">
-            <a class="fb" href="#"></a>
-            <a class="g-plus" href="#"></a>
-            <a class="tw" href="#"></a>
+            <a class="fb" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="g-plus" href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+            <a class="tw" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
         </div>
     </div>
 </header>
 <div class="promo">
     <div class="block-slider">
-        <img src="" alt="">
+        <img src="uploads/Promo-slider.jpg" width="1800" height="490" alt="Promo pictures abstract">
         <div class="container">
             <div class="text-block">
                 <h2 class="slide-title">Anhiora business solutions</h2>
@@ -40,23 +50,23 @@
 </div>
 <div class="container">
     <div class="block-intro">
-        <div>
-            <svg></svg>
+        <div class="wrap-info-box">
+            <span><i class="fa fa-road" aria-hidden="true"></i></span>
             <h3>New way of vision</h3>
             <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
         </div>
-        <div>
-            <svg></svg>
+        <div class="wrap-info-box">
+            <span><i class="fa fa-leaf" aria-hidden="true"></i></span>
             <h3>Fresh ideas</h3>
             <p>Suspendisse auctor sagittis quam quis rhoncus. </p>
         </div>
-        <div>
-            <svg></svg>
+        <div class="wrap-info-box">
+            <span><i class="fa fa-home" aria-hidden="true"></i></span>
             <h3>Strong foundations</h3>
             <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
         </div>
-        <div>
-            <svg></svg>
+        <div class="wrap-info-box">
+            <span><i class="fa fa-users" aria-hidden="true"></i></span>
             <h3>Great support</h3>
             <p>Suspendisse auctor sagittis quam quis rhoncus. </p>
         </div>
@@ -90,36 +100,38 @@
     </div>
 </div>
 <div class="services">
-    <h2 class="title">SERVICES</h2>
-    <div class="text-wrap">
-        <svg></svg>
-        <h5>Consulting</h5>
-        <p>In quis magna eget magna rutrum hendrerit. Donec dap ibus aliquet magna in facilisis. </p>
-    </div>
-    <div class="text-wrap">
-        <svg></svg>
-        <h5>Planning</h5>
-        <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
-    </div>
-    <div class="text-wrap">
-        <svg></svg>
-        <h5>Development</h5>
-        <p>Aliquam tellus leo, egestas eget consectetur sed, lobortis vel nisl. </p>
-    </div>
-    <div class="text-wrap">
-        <svg></svg>
-        <h5>Production</h5>
-        <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
-    </div>
-    <div class="text-wrap">
-        <svg></svg>
-        <h5>Analysis</h5>
-        <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
-    </div>
-    <div class="text-wrap">
-        <svg></svg>
-        <h5>Release</h5>
-        <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
+    <div class="container">
+        <h2 class="title">SERVICES</h2>
+        <div class="text-wrap">
+            <svg></svg>
+            <h5>Consulting</h5>
+            <p>In quis magna eget magna rutrum hendrerit. Donec dap ibus aliquet magna in facilisis. </p>
+        </div>
+        <div class="text-wrap">
+            <svg></svg>
+            <h5>Planning</h5>
+            <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
+        </div>
+        <div class="text-wrap">
+            <svg></svg>
+            <h5>Development</h5>
+            <p>Aliquam tellus leo, egestas eget consectetur sed, lobortis vel nisl. </p>
+        </div>
+        <div class="text-wrap">
+            <svg></svg>
+            <h5>Production</h5>
+            <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
+        </div>
+        <div class="text-wrap">
+            <svg></svg>
+            <h5>Analysis</h5>
+            <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
+        </div>
+        <div class="text-wrap">
+            <svg></svg>
+            <h5>Release</h5>
+            <p>Curabitur at rhoncus quam. In in tortor quis sem tempor ultricies in.</p>
+        </div>
     </div>
 </div>
 
@@ -170,7 +182,8 @@
     <div class="singup-block">
         <div class="singup-wrap">
             <h6>Sign up for free</h6>
-            <p>Suspendisse dictum quam tortor, et dapibus lacus. Quisque euismod lacus in mi consequat sed pulvinar elit ultricies. Nam eu ligula ut massa</p>
+            <p>Suspendisse dictum quam tortor, et dapibus lacus. Quisque euismod lacus in mi consequat sed pulvinar elit
+                ultricies. Nam eu ligula ut massa</p>
         </div>
         <div class="label">
             <span>SUBSCCRIBE TO OUR</span>
@@ -188,5 +201,6 @@
     </div>
 </footer>
 <script src="vendor/jquery/jquery-3.1.1.min.js"></script>
+<script src="vendor/smooth-scroll"></script>
 </body>
 </html>
