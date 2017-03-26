@@ -293,12 +293,38 @@ blockquote::after{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
+}
+.offer-block h5 {
+    box-sizing: border-box;
 }
 .offer-block a{
     background: #314559;
     color: #FFFFFF;
     text-align: center;
 }
+.offer-block ul li {
+    list-style: none;
+
+}
+.offer-block ul li::before {
+    content: '';
+    background: url("../images/checkbox-marker.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    width: 19px;
+    height: 16px;
+    display: inline-block;
+}
+.offer-change-color-list ul li::before{
+    background-position: -20px 0;
+}
+.offer-block .color-link  {
+    background: #d34346;
+}
+
+
 /*******************************FOOTER*****************************/
 footer {
     background: #314559;
@@ -327,20 +353,6 @@ footer div{
     background: url("../images/arrowblue.svg");
     background-repeat: no-repeat;
     display: inline-block;
-}
-/*.slick-dots li button {*/{
-    display: block;
-    width: 47px;
-    height: 48px;
-    cursor: pointer;
-    border: 0;
-    outline: none;
-    position: absolute;
-    background: url("../images/button-arrow-sprite.svg") 0 0;
-    background-repeat: no-repeat;
-}
-.slick-dots {
-    bottom: 50%;
 }
 
 /*********************************Media SCREEN***********************/
@@ -394,7 +406,15 @@ footer div{
     article:last-child{
         margin-right: 0;
     }
-    .profile-block h2 {
+     h2 {
         margin-bottom: 55px;
+    }
+
+    .slick-prev {
+        background: url("../images/button-arrow-sprite.svg") 0 0;
+        left: 0;
+    }
+    .services . h2{
+        margin-bottom: 75px;
     }
 }
